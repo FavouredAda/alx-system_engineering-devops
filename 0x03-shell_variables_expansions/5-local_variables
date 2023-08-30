@@ -1,2 +1,2 @@
 #!/bin/bash
-(compgen -A variable | grep -v 'compgen' | xargs printf '%s\n'); (compgen -A function | xargs printf '%s\n')
+(compgen -A variable | grep -v 'compgen') | (compgen -A function)
